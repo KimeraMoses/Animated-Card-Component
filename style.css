@@ -1,0 +1,100 @@
+    
+/*
+  =======================================
+      INDIVIDUAL DISCUSSION
+  =======================================
+*/
+.gpa__discussion_wrapper{
+    margin: 20px 60px;
+}
+
+
+.gpa__discussion_wrapper .gpa__student_card{
+  perspective: 150rem;
+  -moz-perspective:150rem;
+  background-color:#F4F6F8 !important ;
+  border:.01px #F4F6F8 !important;
+  border-radius: 20px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  width: 450px;
+}
+
+
+.gpa__discussion_wrapper .gpa__student_card:hover .gpa__student_card_side_front{
+  transform: rotateY(180deg);
+
+}
+.gpa__discussion_wrapper .gpa__student_card:hover .gpa__card_side_back{
+  transform: rotateY(0);
+
+}
+.gpa__discussion_wrapper .gpa__student_card_side{
+  position: relative;
+  top:0;
+  left:0;
+  width: 100%;
+  backface-visibility: hidden;
+  border-radius: 20px;
+  color:black;
+  transition: all 1s ease;
+  box-shadow: 0 1.5rem 4rem rgba(0,0,0 ,.15);
+  padding:5px;
+}
+
+.gpa__discussion_wrapper .gpa__student_card_side h3{
+  color:green;
+}
+.gpa__discussion_wrapper .gpa__student_card_side_front{
+  background-color: #fff;
+  text-align: center;
+}
+.gpa__discussion_wrapper .gpa__card_side_back{
+  background-image: linear-gradient(to right bottom,#ffb900,#ff7730 );
+  transform: rotateY(180deg);
+  position: absolute;
+  top:0;
+  margin-bottom: 1rem;
+  padding:20px !important;
+}
+.gpa__discussion_wrapper .gpa__card_side_back h1{
+  padding-bottom: 0;
+}
+.gpa__discussion_wrapper .gpa__card_side_back hr{
+  margin: 10px;
+}
+.gpa__discussion_wrapper #prefered_days{
+  padding-left: 35px;
+}
+
+.gpa__discussion_wrapper .gpa__student_card_side i{
+  color:var(--red-color);
+}
+.gpa__discussion_wrapper .gpa__discussion_email{
+  color:var(--orange-color);
+}
+.gpa__discussion_wrapper .gpa__discussion_rule{
+  border-top: 1px solid var(--red-color);
+  margin:0;
+}
+.gpa__discussion_wrapper .gpa__student_card_profile_img img{
+  width:100px;
+  height: 100px;
+  background-position: bottom;
+  border-radius: 50%;
+  margin-top: 5px;
+}
+ 
+.gpa__discussion_wrapper .gpa__card_content_student_contact_wrapper{
+  padding-left:25px;
+}
+
+.gpa__discussion_wrapper .gpa__card_content_student_contact li{
+  text-align: left !important;
+}
+
+
+.gpa__discussion_wrapper .gpa__card_content_date_posted i{
+  color: var(--date-color) !important;
+  font-size: 14px;
+}
